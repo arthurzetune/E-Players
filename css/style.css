@@ -1,25 +1,25 @@
 :root{
-    --background: #1e1c21;
-    --pink: #fc1e8b;
-    --purple: #7278c3;
-    --blue: #00a8dc;
+    --background: #1E1C21;
+    --pink:#FC1E8B;
+    --purple:#7278C3;
+    --blue: #00A8DC;
+   
 }
 
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 body{
     background-color: var(--background);
-    font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    color: white;
+    font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #ffffff;
+      
 }
-
 a{
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
-
 .gradient{
     background: rgba(252,30,137,1);
     background: -moz-linear-gradient(left, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
@@ -30,34 +30,28 @@ a{
     background: linear-gradient(to right, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc1e89', endColorstr='#7277c3', GradientType=1 );
 }
-
 .container{
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
-
 header .container{
     display: flex;
-    justify-content: space-between;
     padding: 20px 0;
+    justify-content: space-between;
 }
-
 header ul{
     display: flex;
     list-style-type: none;
-    flex-flow: wrap;
     justify-content: space-between;
+    flex-flow: wrap;
 }
-
 header nav{
     width: 60%;
 }
-
 header a{
     text-transform: uppercase;
 }
-
 header img{
     margin-right: 100px;
 }
@@ -75,21 +69,24 @@ header img{
     background: linear-gradient(to bottom, rgba(66,44,90,1) 0%, rgba(16,15,17,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#422c5a', endColorstr='#100f11', GradientType=0 );
 }
-
 .partidas .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
     flex-flow: wrap;
 }
-
-.partida{
-    padding: 0 0 10px 0;
+.proximas_partidas{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
-
+.partida{
+    padding: 0 0 10px 0 ;
+    
+}
 .partida img{
     width: 40px;
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 .partida h2{
@@ -97,17 +94,14 @@ header img{
     text-align: start;
     padding: 10px 0;
 }
-
 .partida div{
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
+display: flex;
+align-items: center;
+padding: 10px 0;
 }
-
 .red{
     color: red;
 }
-
 .banner{
     width: 100%;
     height: 400px;
@@ -118,98 +112,100 @@ header img{
     justify-content: center;
     align-items: center;
 }
-
 .ligas{
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
 }
-
 .ligas img{
+    
     height: 140px;
 }
-
 .ligas h4{
 font-size: 45px;
 text-transform: uppercase;
 }
 
 .ligas h3{
-font-size: 90px;
-text-transform: uppercase;
-line-height: 45px;
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 45px;
 }
-
 .ligas div{
     margin-bottom: 35px;
 }
-
+.ligas_imagens{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
 .sobre_fundo{
-    background-image: url("../img/Teams/T6.jpg");
-    background-position: center ;
-    background-size: cover ;
+    background-image:  url("../img/Teams/T6.jpg");
+    
+    background-position: center;
+    background-size: cover;
     background-attachment: fixed;
     width: 100%;
     min-height: 700px;
     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-
+    
+    
 }
-
 .sobre_fundo_filtro{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgba(114, 120, 195, 0.5);
+    background-color: rgba(114,120,195,0.5);
     width: 100%;
     height: 100%;
-
 }
-
-
 .sobre{
     position: relative;
     display: flex;
-}
 
+}
 .sobre img{
     position: absolute;
     z-index: 99;
     top: -20px;
-    left: 100px;
+    left: 300px;
     width: 100%;
     max-width: 35%;
+    
+    
 }
-
 .texto_sobre{
     width: 40%;
     margin-right: 120px;
     text-align: right;
-    text-shadow: 0px 3px 3px #000;
+    text-shadow: 0px 3px 3px #000000;
 }
-.texto_sobre h2{
+.texto_sobre{
     margin-bottom: 2em;
 }
 
 .content{
     display: flex;
-    justify-content: space-between;
     margin-top: 150px;
+    justify-content: space-between;
 }
-
 .content section{
-    width: 70%;
+    width: 90%;
+    margin: auto;
 }
-
+.content article{
+    width: 100%;
+}
 
 .card{
     width: 100%;
     margin-bottom: 2em;
-    box-shadow: 0px 3px 10px #000;
+    box-shadow: 0px 3px 10px #000000;
     display: flex;
     justify-content: flex-start;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(30,28,33,1) 100%);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(30,28,33,1) 100%);
 }
 
 .card img{
@@ -221,26 +217,24 @@ line-height: 45px;
 .card div{
     padding: 2em;
 }
-
 .card div:hover{
-    background-color: var(--purple);
-    transition-duration: 0.3s;
+    color: var(--background);
+    background-color: var(--pink);
+    transition-duration: 0.5s;
     transition-timing-function: ease-in;
+   
 }
-
-.content h3{
-    text-transform: uppercase;
-    padding: 2em 0;
-    font-size: 1.8em;
-}
-
 .content article{
     width: 25%;
 }
-
 .resultados_box{
-    padding: 2em;
     box-shadow: 0px 3px 10px #000000;
+padding: 2em;
+}
+.card h3{
+    text-transform: uppercase;
+    padding: 1em 0;
+    font-size: 1.8em;
 }
 
 .resultado div{
@@ -248,79 +242,67 @@ line-height: 45px;
     align-items: center;
     justify-content: space-evenly;
 }
-
 .resultado{
     text-align: center;
     margin-bottom: 1.2em;
 }
-
 .resultado img{
     width: 30px;
+    
 }
-
 .resultado p{
     font-size: 1.7em;
-    margin: 0.1em 0 
+margin: 0.1em 0;
 }
-
 footer{
     background-color: black;
-    box-shadow: 0px -6px 10px #000;
+    box-shadow: 0px -6px 10px #000000;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(30,28,33,1) 100%);
-    min-height: 250px;
-    padding: 2em 0;
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(30,28,33,1) 100%);
+min-height: 250px;
+padding: 2em 0;
 }
-
 footer .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
 }
-
 footer nav h3{
     font-size: 1.6em;
     color: #646464;
     margin-bottom: 1em;
 }
-
 footer nav ul{
     list-style-type: none;
 }
-
 footer nav li{
-    margin-bottom: 0.4em;
+margin-bottom: 0.4em;
 }
-
 footer nav a:hover{
     border-bottom: solid 1px var(--purple);
 }
 
-
+/*icones rodape*/
 .sociais{
     display: flex;
     justify-content: space-between;
     font-size: 3em;
     margin-top: 0.5em;
-
+    
 }
-
 .sociais i{
     background: linear-gradient(to bottom, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
-
-
+/*Início configração form do rodapé*/
 footer form{
     display: flex;
     flex-direction: column;
 }
-
 footer form label{
     font-size: 2em;
-    font-weight: bolder;
+    font-weight: bold;
     color: #646464;
     margin-bottom: 0.3em;
 }
@@ -332,108 +314,105 @@ footer form input{
     outline: none;
     padding: 1px;
 }
-
 .btn{
-    color: white;
+    color: #ffffff;
     border: none;
     text-decoration: none;
     padding: 0.65em 2em;
     cursor: pointer;
 }
-
 footer p{
     text-align: center;
     color: #6f6f6f;
 }
 
-
+/*inicio página cadastro*/
 
 .banner_cadastro{
     width: 100%;
     height: 273px;
-    background-image: url(../img/Agrupar12.png);
+    background-image:url(../img/Teams/topocadastro.png);
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: bottom;
+
 }
 .banner_cadastro h1{
     font-size: 3em;
     text-transform: uppercase;
+    
 }
 
+/*formulario*/
 
 .form_cadastro{
+    margin: 10em auto;
     width: 100%;
     max-width: 400px;
-    margin: 10em auto;
-    box-shadow: -1px 4px 15px #000, -1px -6px 10px #7278c3;
+    box-shadow: -1px 4px 5px #000000, -1px -6px 25px #ca40ac ;
     padding: 1.5em;
-    border-radius: 5px;
+   border-radius: 5px;
 }
-
+.campo fieldset{
+    border: none;
+    
+}
 .campo{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1em;
-}
-
-.campo label{
+    margin-bottom: 0.6em;
     text-transform: uppercase;
 }
 
-input[type="text"],
-input[type="password"],
+ input[type="text"],
+ input[type="password"],
 .campo input[type="email"],
-input[type="date"],
+ input[type="date"],
 select{
     width: 50%;
-    background-color: #1e1c21;
+    background-color: #1E1C21;
     border: none;
     outline: none;
-    border-bottom: solid 1px #7278c3;
-    color: #ccc;
+    border-bottom: solid 1px #ca40ac ;
+    color: #ffffff;
 }
-
 .campo input:focus{
     background-color: #2f2f2f;
 }
-
-.campo fieldset{
-    border: none;
-}
-
 .campo fieldset label{
-    margin: 2em 1em 2em 0;
+margin: 2px 1em 2em 0px;
 }
 .termos{
     justify-content: unset;
+    align-items: center;
+    color: #646464;
 }
-
 .termos input{
-    margin-right: 0.5em;
+    margin-right: 1em;
 }
 .campo .btn{
-    margin: auto
+    margin: auto;
 }
-
 .form_cadastro .campo:nth-last-child(n) button{
     margin: auto;
 }
-
 header .fa-bars{
     display: none;
 }
 
+/*Inicio Responsividade*/
+/*800px*/
 
-@media(max-width: 880px){
-    .container{
-        width: 95%;
-    }
+@media(max-width: 800px){
+   .container{
+       width: 95%;
+   }
     header .container img{
         max-width: 180px;
     }
+    
     .partidas .container{
         align-items: flex-start;
         flex-flow: nowrap;
@@ -513,23 +492,80 @@ header .fa-bars{
        padding: 0.5em 0px;
        
     }
-  
+
+  header .container div a{
+      margin-left: 3em;
+  }
     .partidas .container{
         width: 97%;
         flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
     .em_andamento{
-        width: 90%;
+        width: 37%;
+        align-self: flex-start;
+        margin-left: 1em;
     }
 .proximas_partidas{
     width: 90%;
+   
+}
+.partida img{
+    width: 30px;
+    padding: 0 10px;
+    
+}
+.banner{
+    height: 250px;
+
+}
+.banner img{
+    max-width: 100px;
+}
+.ligas{
+    flex-direction: column;
 }
 
+.ligas div:nth-child(1){
+    display: flex;
+}
+.ligas h4, .ligas h3{
+    font-size: 2em;
+    line-height: 20px;
+    margin-right: 0.5em;
+}
+.sobre img{
+    display: none;
+}
+.texto_sobre{
+    width: 90%;
+}
+.content{
+    flex-direction: column;
+    width: 95%;
+}
+
+.content article{
+    width: 95%;
+}
+.card{
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.card img{
+    width: 100%;
+    margin-left: 0px;
+}
+.card div{
+    padding: 1em;
+}
+footer .container{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1em;
 }
 
 
 
-
-
-
+}
