@@ -417,3 +417,119 @@ select{
 .campo .btn{
     margin: auto
 }
+
+.form_cadastro .campo:nth-last-child(n) button{
+    margin: auto;
+}
+
+header .fa-bars{
+    display: none;
+}
+
+
+@media(max-width: 880px){
+    .container{
+        width: 95%;
+    }
+    header .container img{
+        max-width: 180px;
+    }
+    .partidas .container{
+        align-items: flex-start;
+        flex-flow: nowrap;
+    }
+    .em_andamento{
+        width: 30%;
+       
+        
+    }
+    .proximas_partidas{
+        width: 70%;
+       flex-flow: wrap;
+    }
+    .ligas h4{
+        font-size: 30px;
+    }
+    .ligas h3{
+        font-size: 60px;
+    }
+    .ligas img{
+        height: 90px;
+    }
+    .sobre img{
+        max-width: 50%;
+        left: 20px;
+    }
+    .texto_sobre{
+        width: 50%;
+        margin-right: 50px;
+     }
+     .sobre_fundo{
+         min-height: 500px;
+     }
+     .content{
+         margin-top: 30px;
+     }
+     .card img{
+         margin-top: 2em;
+         margin-left: 1em;
+     }
+     .content section {
+        width: 100%;
+        margin-right: 20px;
+    }
+    .resultado p{
+        margin-top: 0.5em;
+    }
+}/*Fim mídia Query 800px*/
+/*inicio media query 460px*/
+@media(max-width:460px){
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 3em;
+        display: block;
+    }
+    header .container div{
+        display:flex;
+        
+        align-items: center;
+    }
+    #menu{
+        position: absolute;
+        top: 5.5em;
+        width: 100%;
+        background-color: var(--purple);
+        left: 0;
+    display: none;
+}
+
+    #menu ul{
+        flex-direction: column;
+        height: 300px;
+        margin-left: 1em;
+    }
+    #menu a{
+        display: block;
+       padding: 0.5em 0px;
+       
+    }
+  
+    .partidas .container{
+        width: 97%;
+        flex-direction: column;
+      align-items: center;
+    }
+    .em_andamento{
+        width: 90%;
+    }
+.proximas_partidas{
+    width: 90%;
+}
+
+}
+
+
+
+
+
+
